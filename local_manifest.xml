@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote  name="PixysOS-Gitlab"
-           fetch="https://gitlab.com/PixysOS-gms-AP2A"
-           revision="refs/heads/fourteen-v3" />
-
 <!-- Apps -->
 <project path="packages/apps/GrapheneCam" name="MI439-CLO/android_packages_apps_GrapheneCam" remote="github" revision="topaz" clone-depth="1" />
 
@@ -24,10 +20,6 @@
 <!-- Vendor -->
 <remove-project path="vendor/aosp" />
 <project path="vendor/aosp" name="germaniumsculk/vendor_aosp" remote="github" revision="fourteen" />
-
-<!-- Vendor GMS -->
-<remove-project path="vendor/gms" />
-<project path="vendor/google/gms" name="vendor_google_gms" remote="PixysOS-Gitlab" />
 
 <!--- Vendor Blobs -->
 <project path="vendor/xiaomi/mi439" name="LOLZKERNEL/proprietary_vendor_xiaomi_mi439-4.19" remote="github" clone-depth="1" revision="udc" />
