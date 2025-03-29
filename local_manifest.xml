@@ -21,7 +21,7 @@
 <project path="hardware/mithorium-4.19/display-commonsys" name="MI439-CLO/android_vendor_qcom_opensource_display-commonsys" remote="github" revision="vic" />
 
 <!-- GMS -->
-<remove-project name="vendor/gms" />
+<remove-project path="vendor/gms" />
 <project path="vendor/gms" name="vendor_gms" remote="germanium" revision="fifteen" />
 
 <!-- GPS -->
