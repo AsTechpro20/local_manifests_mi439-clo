@@ -4,6 +4,9 @@
    <remote name="github"
            fetch="https://github.com" />
 
+   <remote name="germanium"
+           fetch="https://gitlab.com/germaniumsculk" />
+
 <!-- Kernel -->
 <project path="kernel/xiaomi/sdm439" name="Jprimero15/android_kernel_xiaomi_sdm439-4.19" remote="github" clone-depth="1" revision="vic" />
 
@@ -16,7 +19,11 @@
 <!-- Dependencies -->
 <project path="hardware/mithorium-4.19/display" name="MI439-CLO/android_vendor_qcom_opensource_display-commonsys-intf" remote="github" revision="vic" />
 <project path="hardware/mithorium-4.19/display-commonsys" name="MI439-CLO/android_vendor_qcom_opensource_display-commonsys" remote="github" revision="vic" />
-   
+
+<!-- GMS -->
+<remove-project name="vendor/gms" />
+<project path="vendor/gms" name="vendor_gms" remote="germanium" revision="fifteen" />
+
 <!-- GPS -->
 <project path="hardware/qcom-caf/gps-legacy" name="MI439-CLO/android_hardware_qcom_gps" remote="github" revision="uvite-legacy-component" />
    
